@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compras - Restaurante Brunette</title>
+    <link rel="stylesheet" href="compras.css">
+</head>
+<body>
+    <div class="admin-container">
+        <nav>
+            <ul>
+                <li><a href="admin.html">Inicio</a></li>
+                <li><a href="compras.html">Compras</a></li>
+                <li><a href="Proveedores.html">Proveedores</a></li>
+                <li><a href="inventario.html">Inventario</a></li>
+                <li><a href="login.html">Cerrar Sesión</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h2>Compras</h2>
+            <a href="nueva_compra.html" class="styled-button">Agregar Nueva Compra</a>
+            <a id="exportar-btn" class="styled-button">Exportar</a>
+            <div class="filter-search">
+                <label for="filter">Filtrar por:</label>
+                <select id="filter">
+                    <option value="fecha">Fecha</option>
+                    <option value="proveedor">Proveedor</option>
+                    <option value="estado">Estado</option>
+                </select>
+                <input type="text" id="search" placeholder="Buscar...">
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Fecha</th>
+                        <th>Proveedor</th>
+                        <th>Producto</th>
+                        <th>Cantidad</th>
+                        <th>Costo</th>
+                        <th>Estado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>01/01/2024</td>
+                        <td>Proveedor A</td>
+                        <td>Tomate</td>
+                        <td>50 kg</td>
+                        <td>$100</td>
+                        <td>Pendiente</td>
+                    </tr>
+                    <!-- Más filas de ejemplo -->
+                </tbody>
+            </table>
+        </main>
+    </div>
+</body>
+</html>

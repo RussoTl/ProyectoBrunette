@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel Admin - Restaurante Brunette</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <div class="admin-container">
+        <nav>
+            <ul>
+                <li><a href="admin.html">Inicio</a></li>
+                <li><a href="compras.html">Compras</a></li>
+                <li><a href="Proveedores.html">Proveedores</a></li>
+                <li><a href="inventario.html">Inventario</a></li>
+                <li><a href="login.html">Cerrar Sesión</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h2>Restaurant Brunette</h2>
+            <p id ="bienvenida">Bienvenido, <span id="nombre-usuario"></span></p>
+        </main>
+    </div>
+
+    <script>
+        // Supongamos que ya tienes el nombre del usuario almacenado en una variable llamada nombreUsuario
+        var nombreUsuario = "admin"; // Cambia esto por el nombre del usuario real
+
+        // Actualiza el contenido del elemento span con el nombre del usuario
+        document.getElementById("nombre-usuario").innerText = nombreUsuario;
+    </script>
+</body>
+</html>
